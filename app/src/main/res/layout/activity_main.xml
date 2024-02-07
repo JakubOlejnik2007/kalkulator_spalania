@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#141414">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints"
+        android:layout_margin="16dp">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Aplikacja obliczająca spalanie paliwa!"
+            tools:layout_editor_absoluteX="116dp"
+            android:fontFamily="monospace"
+            android:textSize="24dp"
+            android:padding="16dp"
+            android:textColorHint="#EEF0F2"
+            android:textColor="#EEC643" />
+        <EditText
+            android:id="@+id/fuelConsumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Średnie spalanie [l/100km]:"
+            android:inputType="numberDecimal"
+            android:fontFamily="monospace"
+            android:padding="16dp"
+            android:layout_marginVertical="16dp"
+            android:textColorHint="#EEF0F2"
+            android:textColor="#EEC643" />
+        <EditText
+            android:id="@+id/distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Przejechany dystans [km]:"
+            android:inputType="numberDecimal"
+            android:fontFamily="monospace"
+            android:padding="16dp"
+            android:layout_marginVertical="16dp"
+            android:textColorHint="#EEF0F2"
+            android:textColor="#EEC643"/>
+        <EditText
+            android:id="@+id/fuelCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cena paliwa [zł/l]"
+            android:text="6.34"
+            android:inputType="numberDecimal"
+            android:fontFamily="monospace"
+            android:padding="16dp"
+            android:layout_marginVertical="16dp"
+            android:textColorHint="#EEF0F2"
+            android:textColor="#EEC643"/>
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Przelicz"
+            android:fontFamily="monospace"
+            android:textSize="24dp"
+            android:padding="16dp"
+            android:backgroundTint="#EEC643"
+            android:textColor="#011638"
+            android:layout_marginVertical="16dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
